@@ -5,7 +5,7 @@ This project develops a robust predictive engine to estimate the market value of
 
 This repository demonstrates a modern **AI-assisted Data Science workflow**, utilizing Generative AI for code optimization, logic validation, and rapid prototyping of complex visualization pipelines.
 
-## 🧠 Technical Workflow
+##  Technical Workflow
 A hybrid approach was used to ensure both statistical rigor and development efficiency:
 
 1. **Exploratory Data Analysis (EDA):** Performed deep-dive analysis to identify skews in fuel types and handle missing tax data via median imputation.
@@ -22,6 +22,15 @@ The final Ridge Regression model significantly outperformed simple linear benchm
 | **MAE** (Mean Absolute Error) | **£1,754.02** |
 | **RMSE** (Root Mean Sq. Error) | **2,558.99** |
 
+##  Future Enhancements
+To further improve the model's predictive power and utility, the following steps are planned:
+
+* **Advanced Algorithms:** Transition from Linear/Ridge regression to Ensemble methods like **XGBoost** and **Random Forest** to capture complex non-linear patterns.
+* **Feature Enrichment:** Incorporate vehicle 'Brand' and 'Model' categories using Target Encoding to account for luxury vs. economy price premiums.
+* **Log Transformation:** Apply Logarithmic transformations to the target variable (`price`) to better handle the skewed distribution of high-end vehicle prices.
+* **Deployment:** Develop a lightweight **Streamlit web application** to allow users to input car details and receive real-time price estimates.
+* **Automated Pipeline:** Implement a Scikit-Learn `ColumnTransformer` pipeline for more efficient handling of categorical and numerical features in a single flow.
+
 ### Key Insights:
 * **Non-Linearity:** Used car prices do not depreciate linearly; polynomial mapping was essential to improve accuracy from an initial R² of ~0.34 to **0.71**.
 * **Generalization:** The model achieved a CV R² of **0.74** during grid search, indicating strong performance on unseen market data.
@@ -37,7 +46,3 @@ The final Ridge Regression model significantly outperformed simple linear benchm
 * `Used Car Price Intelligence.ipynb`: Full analytical pipeline including data cleaning, EDA, and modeling.
 * `README.md`: Project documentation and performance summary.
 
-## 🚀 How to Use
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/Used-Car-Price-Intelligence.git](https://github.com/YOUR_USERNAME/Used-Car-Price-Intelligence.git)
