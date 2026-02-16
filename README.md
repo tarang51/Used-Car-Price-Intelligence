@@ -21,6 +21,11 @@ The final Ridge Regression model significantly outperformed simple linear benchm
 | **R² Score** | **0.7080** |
 | **MAE** (Mean Absolute Error) | **£1,754.02** |
 | **RMSE** (Root Mean Sq. Error) | **2,558.99** |
+### Visualizing Model Accuracy
+![Actual vs Predicted](predicted_vs_actual.png)
+
+### Statistical Validation
+![Residual Plot](Residuals.png)
 
 ##  Future Enhancements
 To further improve the model's predictive power and utility, the following steps are planned:
